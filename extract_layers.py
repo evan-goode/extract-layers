@@ -89,8 +89,8 @@ def extract_layers(output_directory, overwrite):
         already_extracted.add(sanitized)
 
 @click.command()
-@click.option("--output-directory", required=True)
-@click.option("--overwrite", is_flag=True)
+@click.option("--output-directory", required=True, help="Directory in which to save the layers.")
+@click.option("--overwrite", is_flag=True, help="Clobber existing files.")
 def interface(**args):
     """Extracts layers of an Illustrator-exported SVG and saves them as individual SVG files"""
     try:

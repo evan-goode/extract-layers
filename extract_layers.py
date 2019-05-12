@@ -47,7 +47,7 @@ def extract_layers(output_directory, overwrite):
     eprint("Reading from stdin...")
     tree = xmltodict.parse(sys.stdin.read())
 
-    if os.listdir(output_directory) and not overwrite:
+    if os.path.isdir(output_directory) and os.listdir(output_directory) and not overwrite:
         warn(f'output directory "{output_directory}" is not empty!')
 
     # mkdir -p

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="extract-layers",
-    version="1.0",
+    version="1.0.1",
     py_modules=["extract_layers"],
     install_requires=[
         "Click",

@@ -1,15 +1,15 @@
 from setuptools import setup
 
 setup(
-    name="extract_frames",
+    name="extract-layers",
     version="1.0",
-    py_modules=["extract_frames"],
+    py_modules=["extract_layers"],
     install_requires=[
         "Click",
         "xmltodict"
     ],
     entry_points="""
         [console_scripts]
-        extract-frames=extract_frames:extract_frames
+        extract-layers=extract_layers:interface
     """,
 )

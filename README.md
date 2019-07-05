@@ -1,6 +1,6 @@
 # extract-layers
 
-extract-layers is a simple command-line tool that can extract the layers of an Illustrator-exported SVG and save them as individual SVG files. Unlike Illustrator's "Asset Export" feature, extract-layers will preserve the position of each layer relative to the artboard. Running extract-layers is roughly equivalent to performing the following steps within Illustrator for each layer:
+extract-layers is a simple command-line tool that can extract the layers of an Illustrator-exported SVG and save them as individual SVG files. Unlike Illustrator's "Asset Export" feature, extract-layers will preserve the positions of objects relative to the artboard. Running extract-layers is roughly equivalent to performing the following steps within Illustrator for each layer:
 
 1. Hide all layers except the current layer.
 2. Export the document to an SVG file named after the current layer.
